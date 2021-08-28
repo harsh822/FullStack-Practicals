@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-6</title>
+    <Style>
+        * {
+            padding: 0;
+
+        }
+
+        .main-container {
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(179, 172, 172);
+        }
+
+        .card-div {
+            width: 20%;
+            float: left;
+            margin: 20px 15px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-div p {
+            text-align: justify;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            height: 142px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            /* margin-bottom: 10px; */
+        }
+
+        .button a {
+            text-decoration: none;
+            background-color: #45d0e6;
+            display: block;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin: 10px auto;
+        }
+
+        .button a:hover {
+            background-color: #DF2E2E;
+        }
+
+        /* 
+        img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+         */
+    </Style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Practical-6: Create a Card Layout using CSS layout properties.</h1>
+        <div class="card-div">
+            <div class="image-container">
+                <img src="./Practical-6/html.png" alt="">
+            </div>
+            <h3>Introduction to HTML</h3>
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be
+                displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and
+                scripting languages such as JavaScript.</p>
+                <br>
+            <div class="button">
+                <a href="./Practical-6/HTML.html" target="_blank">Read More</a>
+            </div>
+        </div>
+        <div class="card-div">
+            <div class="image-container">
+                <img src="./Practical-6/css.png" alt="">
+            </div>
+            <h3>Introduction to CSS</h3>
+            <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen,
+                paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all
+                at once.</p>
+                <br>
+                <br>
+            <div class="button">
+                <a href="./Practical-6/CSS.html" target="_blank">Read More</a>
+            </div>
+        </div>
+        <div class="card-div">
+            <div class="image-container">
+                <img src="./Practical-6/JavaScript.jpeg" alt="">
+            </div>
+            <h3>Introduction to JAVASCRIPT</h3>
+            <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript
+                specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has
+                curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+            <div class="button">
+                <a href="./Practical-6/JavaScript.html" target="_blank">Read More</a>
+            </div>
+        </div>
+        <div class="card-div">
+            <div class="image-container">
+                <img src="./Practical-6/BootStrap.png" alt="">
+            </div>
+            <h3>Introduction to BOOTSTRAP</h3>
+            <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web
+                development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons,
+                navigation, and other interface components.</p>
+                <br>
+            <div class="button">
+                <a href="./Practical-6/BOOTSTRAP.html" target="_blank">Read More</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
