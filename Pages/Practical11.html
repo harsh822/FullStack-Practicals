@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-11</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* header h1 {
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+    } */
+
+    footer {
+        /* margin-top: 10px; */
+        background-color: #112031;
+        height: 100vh;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    .main-content {
+        padding-left: 65px;
+        display: flex;
+        /* border: 2px solid red; */
+        margin-bottom: 50px;
+    }
+
+    .about {
+        color: grey;
+        width: 500px;
+        margin: 12px;
+        padding: 10px;
+        /* border: 2px solid black; */
+    }
+
+    .about h1 {
+        margin-bottom: 30px;
+    }
+
+    .categories {
+        margin: 12px;
+        padding: 10px;
+        /* border: 2px solid black; */
+        padding: 10px;
+        width: 250px;
+    }
+
+    .categories h1 {
+        margin-bottom: 30px;
+    }
+
+    .categories ul {
+        list-style: none;
+    }
+
+    .categories ul li a {
+        text-decoration: none;
+        color: grey;
+
+    }
+
+    .categories ul li {
+        margin-bottom: 6px;
+    }
+
+    .quick-links {
+        margin: 12px;
+        padding: 10px;
+        /* border: 2px solid black; */
+        padding: 10px;
+        width: 250px;
+    }
+
+    .quick-links h1 {
+        margin-bottom: 30px;
+    }
+
+    .quick-links ul {
+        list-style: none;
+    }
+
+    .quick-links ul li {
+        margin-bottom: 6px;
+    }
+
+    .quick-links ul li a {
+        text-decoration: none;
+        color: grey;
+
+    }
+
+    .contact-us {
+        color: grey;
+        margin: 12px;
+        padding: 10px;
+        /* border: 2px solid black; */
+        padding: 10px;
+        width: 250px;
+    }
+
+    .contact-us h1 {
+        margin-bottom: 30px;
+    }
+
+    .contact-us p {
+        margin-bottom: 6px;
+    }
+
+    .register {
+        /* margin-left: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .signup-button {
+        background-color: rgb(255, 87, 115);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 38px 23px;
+        border-radius: 30px;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 45px;
+        padding-right: 10px;
+
+    }
+
+    .circle-icon {
+        background: rgb(56, 56, 196);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        /* line-height: 100px; */
+        vertical-align: middle;
+        padding: 20px;
+        color: white;
+    }
+    .circle-icon-google  {
+        background: rgb(56, 56, 196);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 82px;
+        vertical-align: middle;
+        /* padding: 20px; */
+        color: white;
+    }
+
+    .bottom-section {
+        margin-top: 46px;
+        line-height: 10vh;
+        text-align: center;
+        background-color: #152D35;
+        height: 10vh;
+        color: gray;
+        
+    }
+
+    .social-icons .fa {
+        margin-right: 35px;
+        margin: 30px 35px 30px 20px;
+    }
+
+    .contact-us .fa {
+        margin-right: 8px;
+    }
+    .twitter-color {
+        background-color: rgb(92, 209, 255);
+    }
+    .google-color {
+        background-color: red;
+    }
+    .linkedin-color {
+        background-color: rgb(0, 132, 255);
+    }
+    .github-color {
+        background-color: black;
+    }
+    ul li a:hover, ul li a:focus {
+        color:red;
+    }
+</style>
+
+<body>
+    <!-- <header>
+        <h1>Content Area</h1>
+    </header> -->
+    <footer>
+        <section class="main-content">
+            <section class="about">
+                <h1>About</h1>
+                <p>Lorem ipsum,lias asperiores provident ipsum, error vero sed quae porro obcaecati unde voluptate
+                    deserunt ullam tempora hic voluptas! Placeat quasi nobis porro obcaecati mollitia, autem assumenda,
+                    delectus doloribus accusantium ut nihil laboriosam laudantium nostrum! Voluptatum, impedit
+                    doloribus. </p>
+            </section>
+            <section class="categories">
+                <h1>CATEGORIES</h1>
+                <ul>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">UI DESIGN</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">JAVA</a></li>
+                    <li><a href="#">ANDROID</a></li>
+                </ul>
+            </section>
+            <section class="quick-links">
+                <h1>QUICK LINKS</h1>
+                <ul>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">UI DESIGN</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">JAVA</a></li>
+                    <li><a href="#">ANDROID</a></li>
+                </ul>
+            </section>
+            <section class="contact-us">
+                <h1>CONTACT US</h1>
+                <p><i class="fa fa-home"></i>Lorem ipsum dolor sit amet.</p>
+                <p><i class="fa fa-envelope"></i>Lorem ipsum dolor sit amet.</p>
+                <p><i class="fa   fa-phone-square"></i>Lorem ipsum dolor sit.</p>
+                <p><i class="fa fa-facebook-square"></i>Lorem ipsum dolor sit amet.</p>
+            </section>
+        </section>
+        <!-- <hr> -->
+        <section class="register">
+            <h1>Register for Free</h1>
+            <button class="signup-button">Sign Up</button>
+        </section>
+        <!-- <hr> -->
+        <section class="social-icons">
+            <i class="fa fa-facebook fa-3x circle-icon"></i>
+            <i class="fa fa-twitter fa-3x circle-icon twitter-color"></i>
+            <i class="fa fa-google-plus fa-3x circle-icon-google google-color"></i>
+            <i class="fa fa-linkedin fa-3x circle-icon linkedin-color"></i>
+            <i class="fa fa-github fa-3x circle-icon github-color"></i>
+        </section>
+        <section class="bottom-section">
+            <p>Copyright &copy; 2021 All Rights Reserved by Harsh Gautam.</p>
+        </section>
+    </footer>
+</body>
+
+</html>
