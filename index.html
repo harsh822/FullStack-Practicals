@@ -1,103 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practicals</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <style>
-      body {
-        margin: 0;
-        padding: 0% 10% 10% 10%;
-        box-sizing: border-box;
-        background: #D3CCE3;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practicals</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0% 10% 10% 10%;
+      box-sizing: border-box;
+      background: #D3CCE3;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-      }
-      .styled-table {
-        border-collapse: collapse;
-        margin: 25px 0;
-        font-size: 0.9em;
-        width: 100%;
-        font-family: sans-serif;
-        min-width: 400px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      }
-      .styled-table thead tr:first-child {
-        background-color: #004f98;
-        color: #ffffff;
-        text-align: center;
-      
-      }
-      .top-heading {
-          text-align: center;
-          /* font-weight: 1000; */
-          font-size: 60px;
-          
-      }
-      .top-para {
-          text-align: center;
-          font-size: 20px;
-      }
-      .main-heading {
-        font-size: larger;
-      }
-      .column-heading {
-        text-align: left;
-        background-color: white;
-      }
-      .styled-table th,
-      .styled-table td {
-        padding: 12px 15px;
-      }
-      .styled-table tbody tr {
-        border-bottom: 1px solid #dddddd;
+    }
+
+    .styled-table {
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      width: 100%;
+      font-family: sans-serif;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .styled-table thead tr:first-child {
+      background-color: #004f98;
+      color: #ffffff;
+      text-align: center;
+
+    }
+
+    .top-heading {
+      text-align: center;
+      /* font-weight: 1000; */
+      font-size: 60px;
+
+    }
+
+    .top-para {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .main-heading {
+      font-size: larger;
+    }
+
+    .column-heading {
+      text-align: left;
+      background-color: white;
+    }
+
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 15px;
+    }
+
+    .styled-table tbody tr {
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .styled-table tbody tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+
+    .styled-table tbody tr:nth-of-type(odd) {
+      background-color: white;
+    }
+
+    .styled-table tbody tr:last-of-type {
+      border-bottom: 2px solid #004f98;
+    }
+
+    .styled-table tbody tr.active-row {
+      font-weight: bold;
+      color: #009879;
+    }
+
+    .action--delete {
+      margin-left: 8px;
+      font-size: larger;
+    }
+
+    .action--edit {
+      font-size: larger;
+    }
+
+    a {
+      text-decoration: none;
+      color: gray;
+    }
+
+    a:hover {
+      color: rgb(38, 201, 255);
+    }
+
+    .status {
+      color: red;
+    }
+
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 120px;
+      height: 120px;
+      margin: -76px 0 0 -76px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
       }
 
-      .styled-table tbody tr:nth-of-type(even) {
-        background-color: #f3f3f3;
+      100% {
+        transform: rotate(360deg);
       }
-      .styled-table tbody tr:nth-of-type(odd) {
-        background-color: white;
+    }
+
+    /* Add animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+
+    @keyframes animatebottom {
+      from {
+        bottom: -100px;
+        opacity: 0
       }
 
-      .styled-table tbody tr:last-of-type {
-        border-bottom: 2px solid #004f98;
+      to {
+        bottom: 0;
+        opacity: 1
       }
-      .styled-table tbody tr.active-row {
-        font-weight: bold;
-        color: #009879;
-      }
-      .action--delete {
-        margin-left: 8px;
-        font-size:larger;
-      }
-      .action--edit {
-        font-size:larger;
-      }
-      a {
-        text-decoration: none;
-        color: gray;
-      }
-      a:hover {
-        color: rgb(38, 201, 255);
-      }
-      .status {
-        color: red;
-      }
-    </style>
+    }
+
+    #myDiv {
+      display: none;
+      text-align: center;
+    }
+  </style>
 </head>
-<body>
+
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
     <h1 class="top-heading">Welcome to live practical book</h1>
-    <p class="top-para">This is a live practical book for the subject Fullstack Development. In this book we are performing all the practicals related to front-end web development.</p>
-    <table class ="styled-table">
+    <p class="top-para">This is a live practical book for the subject Fullstack Development. In this book we are
+      performing all the practicals related to front-end web development.</p>
+    <table class="styled-table">
       <thead>
         <tr>
           <th colspan="5" class="main-heading">FullStack Live Practical Book</th>
@@ -129,7 +199,7 @@
         <tr>
           <td>2.</td>
           <td>
-            	Create a web page showing a basic html structure using character Entities and span Tag.
+            Create a web page showing a basic html structure using character Entities and span Tag.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical2.html">Practical-2</a>
@@ -143,7 +213,7 @@
         <tr>
           <td>3.</td>
           <td>
-            	Live your First Web-Page on Git-Hub.
+            Live your First Web-Page on Git-Hub.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical3.html">Practical-3</a>
@@ -157,7 +227,7 @@
         <tr>
           <td>4.</td>
           <td>
-            	Create a website having list of all practical and their individual practical Page links.
+            Create a website having list of all practical and their individual practical Page links.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical4.html">Practical-4</a>
@@ -171,7 +241,7 @@
         <tr>
           <td>5.</td>
           <td>
-            	Create a Web-Page showing the use of Image-Map in the Web Application.
+            Create a Web-Page showing the use of Image-Map in the Web Application.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical5.html">Practical-5</a>
@@ -185,7 +255,7 @@
         <tr>
           <td>6.</td>
           <td>
-            	Create a Card Layout using CSS layout properties.
+            Create a Card Layout using CSS layout properties.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical6.html">Practical-6</a>
@@ -213,7 +283,7 @@
         <tr>
           <td>8.</td>
           <td>
-            	Create a Web Page having Fixed Navigation Bar with the given content.
+            Create a Web Page having Fixed Navigation Bar with the given content.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical8.html">Practical-8</a>
@@ -227,7 +297,7 @@
         <tr>
           <td>9.</td>
           <td>
-            	Create a Responsive Web Layout with Responsive Navigation Bar.
+            Create a Responsive Web Layout with Responsive Navigation Bar.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical9.html">Practical-9</a>
@@ -255,7 +325,7 @@
         <tr>
           <td>11.</td>
           <td>
-            	Create a Responsive Footer Template.
+            Create a Responsive Footer Template.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical11.html">Practical-11</a>
@@ -269,7 +339,7 @@
         <tr>
           <td>12.</td>
           <td>
-            	Create a Table that represent Live Practical Book Records .
+            Create a Table that represent Live Practical Book Records .
           </td>
           <td class="deliver">
             <a href="./Pages/Practical12.html">Practical-12</a>
@@ -283,7 +353,7 @@
         <tr>
           <td>13.</td>
           <td>
-            	Create a Custom Price Table Template.
+            Create a Custom Price Table Template.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical13.html">Practical-13</a>
@@ -297,7 +367,7 @@
         <tr>
           <td>14.</td>
           <td>
-            	Create a counter.
+            Create a counter.
           </td>
           <td class="deliver">
             <a href="./Pages/Practical14.html">Practical-14</a>
@@ -308,7 +378,35 @@
             <a class="action--delete"><i class="fa fa-trash"></i></a>
           </td>
         </tr>
+        <tr>
+          <td>15.</td>
+          <td>
+            Create a template.
+          </td>
+          <td class="deliver">
+            <a href="./Pages/Final Practical.html">Final Practical</a>
+          </td>
+          <td class="status">Unchecked</td>
+          <td>
+            <a class="action--edit"><i class="fa fa-pencil"></i></i></a>
+            <a class="action--delete"><i class="fa fa-trash"></i></a>
+          </td>
+        </tr>
       </tbody>
     </table>
+  </div>
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
 </body>
+
 </html>

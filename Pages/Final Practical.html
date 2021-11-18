@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-image: url(../Images/bg.jpg);
+        background-size: cover;
+      }
+      .list {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        font-size: smaller;
+        list-style: none;
+        margin: 1.5% 1% 1.5% 1%;
+        font-weight: bolder;
+      }
+      .logo {
+        margin: 1.35% 7% 1.5% 7%;
+        font-size: larger;
+      }
+      .logo > a {
+        color: #3dab8e;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3%;
+        background-color: white;
+        width: 25%;
+      }
+      .heading {
+        font-weight: 200;
+      }
+      .para {
+        margin: 7% 0 7% 0;
+      }
+
+      .main-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+      }
+      .btn {
+        border: none;
+        background-color: #3dab8e;
+        color: white;
+        padding: 3%;
+        margin-top: 5%;
+        width: 40%;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="list">
+        <li><a href="" style="color: #3dab8e">Home</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Services</a></li>
+        <li class="logo"><a href="">marga</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="main-box">
+      <div class="box">
+        <h1 class="heading">DESIGN THAT MAKES YOU FEEL AT HOME</h1>
+        <p class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+          sequi, tempore autem velit est nobis!
+        </p>
+        <button class="btn">
+          <a href="" style="color: white">Contact Us</a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
